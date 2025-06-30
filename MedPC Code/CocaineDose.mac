@@ -1,0 +1,36 @@
+<Parameter_Panel>
+  <Parameters>
+    <Parameter>
+      <Prompt>Cocaine Dose</Prompt>
+      <Type>Floating Point</Type>
+      <Default/>
+      <Macro_Variable>%CocaineDose</Macro_Variable>
+      <List_Values>N/A</List_Values>
+    </Parameter>
+    <Parameter>
+      <Prompt>Window Size</Prompt>
+      <Type>Floating Point</Type>
+      <Default/>
+      <Macro_Variable>%Window</Macro_Variable>
+      <List_Values>N/A</List_Values>
+    </Parameter>
+    <Parameter>
+      <Prompt>Cocaine Cap</Prompt>
+      <Type>Floating Point</Type>
+      <Default/>
+      <Macro_Variable>%Cap</Macro_Variable>
+      <List_Values>N/A</List_Values>
+    </Parameter>
+  </Parameters>
+  <Instructions/>
+  <Caption/>
+</Parameter_Panel>
+
+DELAY 100
+
+SET H(0) VALUE %COCAINEDOSE MAINBOX %PARENTBOX BOXES
+SET H(1) VALUE %WINDOW MAINBOX %PARENTBOX BOXES
+SET H(2) VALUE %CAP MAINBOX %PARENTBOX BOXES
+
+
+
